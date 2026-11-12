@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Agenda</title>
+</head>
+<body>
+       <script>
+        let tarefas = ["05h - Acordar \n","07h - Escola \n","13h- chegar em casa \n","14h - Trabalhar \n","18h - Judô \n","20h - Tarefa \n", "21:30h - Sobremesa \n", "22h - dormir \n"];
+
+
+        tarefas.lengt
+        console.log(`Você tem ${tarefas.length} tarefas pendentes`);
+
+
+        tarefas.push("21h - Jantar");
+        console.log(`Você adicionou a trefa ${tarefas[8]}`);
+
+
+        tarefas.sort()
+        console.log(`Tarefas por horario: \n${tarefas}`);
+
+
+        tarefas.shift() 
+        console.log(`Você finalizou a tarefa \n${tarefas[0]}`);
+
+
+        tarefas.pop() 
+        console.log(`Você desistiu da tarefa \n${tarefas[5]}`);
+
+
+        tarefas.pop() 
+        console.log(`Você removeu a tarefa \n${tarefas[3]}`);
+
+
+    </script>
+</body>
+</html>
