@@ -7,31 +7,31 @@
 </head>
 <body>
        <script>
-        let tarefas = ["05h - Acordar \n","07h - Escola \n","13h- chegar em casa \n","14h - Trabalhar \n","18h - Judô \n","20h - Tarefa \n", "21:30h - Sobremesa \n", "22h - dormir \n"];
+        let tarefas = ["05h - Acordar \n","07h - Escola \n","13h- chegar em casa \n","14h - Trabalhar \n","18h - Judô \n","20h - Tarefa \n", "22h - dormir \n"];
 
 
         tarefas.lengt
         console.log(`Você tem ${tarefas.length} tarefas pendentes`);
-
+        console.log(`${tarefas}`)
 
         tarefas.push("21h - Jantar");
-        console.log(`Você adicionou a trefa ${tarefas[8]}`);
-
+        console.log(`Você adicionou a tarefa ${tarefas[7]}`);
+        console.log(`Agenda Atualizada: ${tarefas}`)
 
         tarefas.sort()
         console.log(`Tarefas por horario: \n${tarefas}`);
 
-
-        tarefas.shift() 
         console.log(`Você finalizou a tarefa \n${tarefas[0]}`);
+        tarefas.shift() 
+        console.log(`Agenda Atualizada: ${tarefas}`)
 
-
+        console.log(`Você desistiu da tarefa \n${tarefas[6]}`);
         tarefas.pop() 
-        console.log(`Você desistiu da tarefa \n${tarefas[5]}`);
+        console.log(`Agenda Atualizada: ${tarefas}`)
 
-
-        tarefas.pop() 
         console.log(`Você removeu a tarefa \n${tarefas[3]}`);
+        tarefas.splice(3,1) 
+        console.log(`Agenda Atualizada: ${tarefas}`)
 
 
     </script>
